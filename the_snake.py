@@ -31,6 +31,7 @@ pygame.display.set_caption('Змейка - Рекорд: 0')  # Изначаль
 # Настройка времени:
 clock = pygame.time.Clock()
 
+
 class GameObject:
     """Базовый класс для игровых объектов."""
 
@@ -75,7 +76,7 @@ class Snake(GameObject):
         self.next_direction = None
         self.body_color = SNAKE_COLOR
         self.length = 2
-        self.position = (0,0)
+        self.position = (0, 0)
 
     def update_direction(self):
         """Обновление направления движения змейки."""
